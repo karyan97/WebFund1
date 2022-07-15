@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Donate</title>
+<script defer src = "script.js"></script>
+<link rel = "icon" href = 
+"Media/Logo.PNG">
+<meta charset="utf-8">
+</head>
+
+<main>
+
+    <link rel="stylesheet" href="Donate.style.css">
+
+    <aside>
+        <ul class="asideList">
+          <li><a href="Main.html" class="asideAnchor">Home</a></li>
+          <li><a href="About.html" class="asideAnchor">About</a></li>
+          <li><a href="Events.html" class="asideAnchor">Programs & Events</a></li>
+          <li><a href="Main.html#Explore-sec" class="asideAnchor">Explore</a></li>
+          <li><a href="Contact.html" class="asideAnchor">Get in Touch</a></li>
+          <li><a href="Donate.html" class="asideAnchor">DONATE HERE</a></li>
+        </ul>
+      </aside>
+  
+      <section>
+        <input type="checkbox" id="myInput">
+        <label for="myInput">
+          <span class="bar top"></span>
+          <span class="bar middle"></span>
+          <span class="bar bottom"></span>
+        </label>
+    
+    <div class="content">
+        <header>
+  
+            <a href=Main.html><img src="Media/Logo.PNG" class="logo"></a>
+            <a href=Main.html class="main"><h2>fashion farm '22</h2></a>
+            
+        </header>  
+
+        <body>
+
+            <div class="contact">
+                <h1 class="contactText">DONATE</h1>
+              </div>
+
+            <p class="center subtitle">We Need <u>Your Support</u></p>
+            <p class="center">Fashion Farm is working towards raising awareness on sustainable fashion. </p>
+
+            <div id="myForm" class="center">
+                <h2>Donation Form</h2>
+              <form id="form" action="#" method="GET">
+                <p>What is your name? * <br>
+                <input id="name" name="name" type="text" class="short" placeholder="Your Name" required></p>
+                <p>What is your email? * <br>
+                <input id="email" name="email" type="text" class="short" placeholder="Your Email" required></p>
+                <p>City: * <br>
+                <input id="city" name="city" type="text" class="short" placeholder="City" required></p>
+                <p>Province: * <br>
+                <input id="province" name="province" type="text" class="short" placeholder="Province" required></p>
+                <p>Country: * <br>
+                <input id="country" name="country" type="text" class="short" placeholder="Country" required></p>
+
+                <p>Donation Amount: * <br>
+                    <select id="donation-select">
+                      <option value="">Select one...</option>
+                      <option value=10>RM10</option>
+                      <option value=20>RM20</option>
+                      <option value=50>RM50</option>
+                      <option value=100>RM100</option>
+                      <option value=200>RM200</option>
+                      <option value=500>RM500</option>
+                      <option value="">Other</option>
+                    </select>
+                </p>
+
+                <p>Donation Amount (if you chose 'other'): <br>
+                  <input id="amt" name="amt" type="number" class="short" placeholder="Total Amount"></p>
+                
+                <h3>Payment Details</h3>
+                <div>
+                <p>Your Card Number: * <br>
+                <input id="cardNo" name="cardNo" type="number" class="short" placeholder="XXXXXXXXXXXXXXXX" required></p>
+                </div>
+                <p>Card Expiry Date: * <br>
+                <input id="expDate" name="expDate" type="number" class="short" placeholder="MMYY" required></p>
+                <p>CVC/CVV Number: * <br>
+                <input id="cvc" name="cvc" type="number" class="short" placeholder="CVC/CVV" required></p>
+          
+            </p>
+          
+              <p> Donor Message (Optional): </p>
+              <p><textarea class="long" placeholder="E.g. What inspired your donation? Who is this donation in honour of? "></textarea></p>
+
+              <button id="check" class="button" type="submit">Submit</button>
+              <br><br>
+            </div>
+          </form>
+
+    <div class="line">
+        <hr>
+    </div>
+    
+    <h2 class="subtitle center">Your donation will help to:</h2>
+    <div class="textBox">
+    <hr>
+    <h3>· Help out less privileged community to obtain sufficient clothing. </h3>
+    <p>Despite the numerous amount of clothing and textile waste, there is still a wide number of citizens struggling to wear decent clothes that protect and sustain their daily life. 50% of the collected funds go directly to Tzu Chi Foundation.</p>
+    <h3>· Inspire people to think differently about our clothes</h3>
+    <p>We create interactive resources, practical guides and innovative events to think differently about how we buy, care and dispose of our clothes.</p>
+    <h3>· Promote ethical standards of conduct amongst industry and policymakers</h3>
+    <p>We celebrate best practice and work to secure respect for the rights of garment workers and to strengthen environmental protection.</p>
+    <br>
+    </div>
+
+    <br><br>
+</body>
+
+
+
+<div class="newsletter">
+  <img src="Media/Pic3.PNG" height="100%" class="left">
+<form name="form1" action="#">
+  <br>
+  Keep up with sustainable fashion updates:
+  <input type="text" name="text1" class="emailBox" placeholder="Your email..." required>
+  <input class="validate sendBtn"
+        type="submit"
+        name="validate"
+        value="Send"
+        onclick="ValidateEmail(document.form1.text1)"
+      />
+</form>
+</div>
+
+<footer>
+    <br>
+    <h2 class="title">Fashion Should Not Cost The Earth. </h2>
+
+    <nav>
+        <a href=Main.html class="fText">Home</a> &emsp;
+        <a href=About.html class="fText">About</a>  &emsp;
+        <a href=Events.html class="fText">Programs & Events</a>  &emsp;
+        <a href=Main.html#Explore-sec class="fText">Explore</a> &emsp;
+        <a href=Contact.html class="fText">Get in Touch</a> &emsp;
+        <b><a href=Donate.html class="donateButton">Donate</a></b>
+        <br><br>
+    </nav>
+
+    <p class="center"><a href=Main.html><img src="Media/Logo.PNG" height="30"></a>&emsp;<i>Copyright &copy; Fashion Farm 2022.</i></p>
+</footer>
+
+</div>
+</section>
+
+</main>

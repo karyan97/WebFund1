@@ -1,0 +1,301 @@
+body, html {
+    margin: 0%;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  main {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  aside {
+    background-color: #A26360;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    z-index: 1;
+  }
+  
+  section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  label {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 3;
+    position: fixed;
+  }
+  
+  .bar {
+    display: block;
+    background-color: #A26360;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 5px auto;
+    transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;
+  }
+  
+  .content {
+    top: 0;
+    bottom: 0;
+    position: relative;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+    transition: transform .5s ease-in-out;
+    padding: 15px;
+  }
+  
+  .asideList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, .7);
+  }
+  
+  .asideAnchor {
+    border-bottom: 2px solid rgba(255, 255, 255, .7);
+    padding: 20px 0;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    transition: color .3s .15s ease-in;
+  }
+  
+  .asideAnchor::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #fff;
+    width: 0;
+    transition: width .3s ease-in;
+    z-index: -1;
+  }
+  
+  .asideAnchor:hover {
+    color: #A26360;
+  }
+  
+  .asideAnchor:hover::after {
+    width: 100%;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ .content {
+    transform: translateX(20%);
+  }
+  
+  input[type="checkbox"]:checked ~ label .bar {
+    background-color: #fff;
+  }
+  
+  input[type="checkbox"]:checked ~ label .top {
+    -webkit-transform: translateY(0px) rotateZ(45deg);
+    -moz-transform: translateY(0px) rotateZ(45deg);
+    -ms-transform: translateY(0px) rotateZ(45deg);
+    -o-transform: translateY(0px) rotateZ(45deg);
+    transform: translateY(0px) rotateZ(45deg);
+  }
+  
+  input[type="checkbox"]:checked ~ label .bottom {
+    -webkit-transform: translateY(-15px) rotateZ(-45deg);
+    -moz-transform: translateY(-15px) rotateZ(-45deg);
+    -ms-transform: translateY(-15px) rotateZ(-45deg);
+    -o-transform: translateY(-15px) rotateZ(-45deg);
+    transform: translateY(-15px) rotateZ(-45deg);
+  }
+  
+  input[type="checkbox"]:checked ~ label .middle {
+    width: 0;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    float: right;
+    }
+
+    .main {
+        text-align: center;
+        font-family: MS UI Gothic;
+        text-decoration: none;
+        color: black;
+    }
+
+    .title {
+        font-family: Bodoni MT;
+        font-size: 50px;
+    }
+    
+    .details {
+        font-family: Yu Gothic;
+    }
+
+    .button {
+        background-color: brown;
+        text-decoration: none;
+        color: #fff;
+        border: none;
+        padding: 15px 100px;
+        text-align: center;
+        text-decoration: none;
+        font-family: Yu Gothic;
+        float: center;
+        font-size: 16px;
+    }
+    
+    .content {
+        font-family: Yu Gothic;
+    }
+    
+    .suggested {
+        font-family: Yu Gothic;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .left {
+        float:left; 
+        width: 55%;
+    }
+
+    .rightBox {
+        float: right;
+        width: 43%;
+        padding-right: 10%;
+    }
+
+    .leftBox {
+      float:left; 
+      width: 55%;
+      padding-left: 10%;
+  }
+
+  .right {
+      float: right;
+      width: 43%;
+  }
+
+    .rightText {
+      text-align: right;
+    }
+
+    div {
+        
+        clear: both;
+    }
+
+    .Pic6 {
+        border: 10px solid #fff;
+    }
+
+    .subtitle {
+        font-family: Bodoni MT;
+        font-size: 50px;
+    }
+    
+    .subtitle2 {
+        font-family: Bodoni MT;
+    }
+
+    .fText {
+        text-decoration: none;
+        color: #CC5500;
+        font-weight: bold;
+    }
+
+    .newsletter {
+      background-color: black;
+      height: 130px;
+      color: white;
+    }
+
+    .donateButton {
+      background-color: orange;
+      text-decoration: none;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-family: Yu Gothic;
+      float: center;
+      font-size: 16px;
+      border-radius: 16px;
+    }
+
+    footer {
+      background-color: #E8E9EB;
+      padding: 20px;
+    }
+
+    .text {
+      text-align: justify;
+    }
+
+    .emailBox {
+      width: 30%;
+      height: 32px;
+      padding: 2px 5px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      background-color: #F5F5F5;
+      font-size: 15px;
+      resize: none;
+      font-family: Yu Gothic;
+      margin: 5px;
+    }
+  
+    .sendBtn {
+      background-color: #fff;
+      text-decoration: none;
+      color: black;
+      border: none;
+      padding: 2px 5px;
+      text-align: center;
+      text-decoration: none;
+      font-family: Yu Gothic;
+      line-height: 30px;
+      font-size: 15px;
+      border-radius: 1px;
+    }
+
+    #Explore-sec {
+      background-image: url("Media/Blur.jpg");
+    }
+
+    .white {
+      color: #fff;
+    }
